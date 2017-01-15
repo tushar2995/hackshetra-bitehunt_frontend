@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>BiteHunt</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+  function chooseFile() {
+      $("#fileInput").click();
+   }
+  
+  $(document).ready(function(){
+  $("button").click(function(){
+  $("#div1").slideUp("slow");
+  });
+  });</script>
+<style>
+.jumbotron{ 
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+}
+</style>
+</head>
+<body>
+
+<div  id="div1" class="jumbotron text-center">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1> BITE HUNT</h1>
+<p>Get the nutrition out of every bite!!</p>
+
+<button class="btn btn-danger btn-lg">Get Started</h3>
+</div>
+<div class="container-fluid">
+<div class="jumbotron text-center">
+<h3> BITE HUNT</h1>
+</div>
+<br>
+<br>
+<form  method="post" enctype="multipart/form-data" align="center" class="form-inline">
+    <div class="input-group">
+	<div style="height:0px;overflow:hidden">
+      <input type="file" id="fileInput" name="fileInput"  placeholder="No file chosen" required/>
+	  </div>
+      <div class="input-group-btn">
+        <button type="button" onclick="chooseFile();" name="file"  class="btn btn-danger">Choose file</button>
+		<button type="submit"  value="Upload"  class="btn btn-danger">Upload</button>	
+      </div>
+    </div>
+  </form>
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
